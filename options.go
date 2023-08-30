@@ -38,8 +38,8 @@ func defaultConfig() Config {
 			minDelay: 100 * time.Millisecond,
 			maxDelay: 5 * time.Second,
 		},
-		pingInterval: 5 * time.Second,
-		timeout:      30 * time.Second,
+		pingInterval: 10 * time.Minute, // 5 * time.Second,
+		timeout:      10 * time.Minute, // 30 * time.Second,
 
 		aliasedHandlerMethods: map[string]string{},
 
