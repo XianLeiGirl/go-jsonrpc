@@ -872,7 +872,7 @@ func (c *wsConn) handleWsConn(ctx context.Context) {
 	}
 }
 
-var onReadDeadlineResetInterval = 5 * time.Second
+var onReadDeadlineResetInterval = 10 * time.Minute // 5 * time.Second
 
 // autoResetReader wraps a reader and resets the read deadline on if needed when doing large reads.
 func (c *wsConn) autoResetReader(reader io.Reader) io.Reader {
